@@ -1,0 +1,16 @@
+PODS:
+  - KissXML (5.0)
+  - MBProgressHUD (0.8)
+  - MSCellAccessory (1.1.2)
+
+DEPENDENCIES:
+  - KissXML (~> 5.0)
+  - MBProgressHUD (~> 0.8)
+  - MSCellAccessory
+
+SPEC CHECKSUMS:
+  KissXML: 4c66b6f39ef49c23e6bb8d335b94136f12b1b615
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MSCellAccessory: 31ff1a805d885cd71a2af0307d15306d1bced99b
+
+COCOAPODS: 0.29.0

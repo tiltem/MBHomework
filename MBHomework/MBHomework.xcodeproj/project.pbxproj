@@ -1,0 +1,1130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93F5E8167A76474A9F9686BE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485A3A6C14324D998BFE62B2 /* libPods.a */; };
+		C9F1999318D968940051E357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1999218D968940051E357 /* Foundation.framework */; };
+		C9F1999518D968940051E357 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1999418D968940051E357 /* CoreGraphics.framework */; };
+		C9F1999718D968940051E357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1999618D968940051E357 /* UIKit.framework */; };
+		C9F1999D18D968940051E357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F1999B18D968940051E357 /* InfoPlist.strings */; };
+		C9F1999F18D968940051E357 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F1999E18D968940051E357 /* main.m */; };
+		C9F199A318D968940051E357 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F199A218D968940051E357 /* AppDelegate.m */; };
+		C9F199A618D968940051E357 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F199A418D968940051E357 /* Main_iPhone.storyboard */; };
+		C9F199A918D968940051E357 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F199A718D968940051E357 /* Main_iPad.storyboard */; };
+		C9F199AE18D968940051E357 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F199AD18D968940051E357 /* Images.xcassets */; };
+		C9F199B518D968950051E357 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F199B418D968950051E357 /* XCTest.framework */; };
+		C9F199B618D968950051E357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1999218D968940051E357 /* Foundation.framework */; };
+		C9F199B718D968950051E357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1999618D968940051E357 /* UIKit.framework */; };
+		C9F199BF18D968950051E357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F199BD18D968950051E357 /* InfoPlist.strings */; };
+		C9F199C118D968950051E357 /* MBHomeworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F199C018D968950051E357 /* MBHomeworkTests.m */; };
+		C9F199D118DA995E0051E357 /* MBStaffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F199D018DA995E0051E357 /* MBStaffTableViewController.m */; };
+		C9F199D418DA9B8B0051E357 /* StaffTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F199D318DA9B8B0051E357 /* StaffTableViewCell.m */; };
+		C9F199D918DA9F430051E357 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F199D818DA9F430051E357 /* APIClient.m */; };
+		C9F19B8418DC934A0051E357 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = C9F19AE718DC934A0051E357 /* ReadMe.txt */; };
+		C9F19B8518DC934A0051E357 /* AddOrUpdateAppointmentsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AEA18DC934A0051E357 /* AddOrUpdateAppointmentsRequest.m */; };
+		C9F19B8618DC934A0051E357 /* AddOrUpdateAppointmentsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AEC18DC934A0051E357 /* AddOrUpdateAppointmentsResult.m */; };
+		C9F19B8718DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AEE18DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.m */; };
+		C9F19B8818DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AF018DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.m */; };
+		C9F19B8918DC934A0051E357 /* AddOrUpdateStaffRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AF218DC934A0051E357 /* AddOrUpdateStaffRequest.m */; };
+		C9F19B8A18DC934A0051E357 /* AddOrUpdateStaffResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AF418DC934A0051E357 /* AddOrUpdateStaffResult.m */; };
+		C9F19B8B18DC934A0051E357 /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AF618DC934A0051E357 /* Appointment.m */; };
+		C9F19B8C18DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AF818DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.m */; };
+		C9F19B8D18DC934A0051E357 /* ArrayOfAppointment.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AFA18DC934A0051E357 /* ArrayOfAppointment.m */; };
+		C9F19B8E18DC934A0051E357 /* ArrayOfAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AFC18DC934A0051E357 /* ArrayOfAvailability.m */; };
+		C9F19B8F18DC934A0051E357 /* ArrayOfClientIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19AFE18DC934A0051E357 /* ArrayOfClientIndex.m */; };
+		C9F19B9018DC934A0051E357 /* ArrayOfClientIndexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0018DC934A0051E357 /* ArrayOfClientIndexValue.m */; };
+		C9F19B9118DC934A0051E357 /* ArrayOfClientRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0218DC934A0051E357 /* ArrayOfClientRelationship.m */; };
+		C9F19B9218DC934A0051E357 /* ArrayOfCustomClientField.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0418DC934A0051E357 /* ArrayOfCustomClientField.m */; };
+		C9F19B9318DC934A0051E357 /* ArrayOfDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0618DC934A0051E357 /* ArrayOfDateTime.m */; };
+		C9F19B9418DC934A0051E357 /* ArrayOfDayOfWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0818DC934A0051E357 /* ArrayOfDayOfWeek.m */; };
+		C9F19B9518DC934A0051E357 /* ArrayOfInt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0A18DC934A0051E357 /* ArrayOfInt.m */; };
+		C9F19B9618DC934A0051E357 /* ArrayOfLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0C18DC934A0051E357 /* ArrayOfLocation.m */; };
+		C9F19B9718DC934A0051E357 /* ArrayOfLong.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B0E18DC934A0051E357 /* ArrayOfLong.m */; };
+		C9F19B9818DC934A0051E357 /* ArrayOfOption.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1018DC934A0051E357 /* ArrayOfOption.m */; };
+		C9F19B9918DC934A0051E357 /* ArrayOfPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1218DC934A0051E357 /* ArrayOfPermission.m */; };
+		C9F19B9A18DC934A0051E357 /* ArrayOfProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1418DC934A0051E357 /* ArrayOfProgram.m */; };
+		C9F19B9B18DC934A0051E357 /* ArrayOfRep.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1618DC934A0051E357 /* ArrayOfRep.m */; };
+		C9F19B9C18DC934A0051E357 /* ArrayOfResource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1818DC934A0051E357 /* ArrayOfResource.m */; };
+		C9F19B9D18DC934A0051E357 /* ArrayOfScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1A18DC934A0051E357 /* ArrayOfScheduleItem.m */; };
+		C9F19B9E18DC934A0051E357 /* ArrayOfStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1C18DC934A0051E357 /* ArrayOfStaff.m */; };
+		C9F19B9F18DC934A0051E357 /* ArrayOfStaffFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B1E18DC934A0051E357 /* ArrayOfStaffFilter.m */; };
+		C9F19BA018DC934A0051E357 /* ArrayOfString.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2018DC934A0051E357 /* ArrayOfString.m */; };
+		C9F19BA118DC934A0051E357 /* ArrayOfUnavailability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2218DC934A0051E357 /* ArrayOfUnavailability.m */; };
+		C9F19BA218DC934A0051E357 /* Availability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2418DC934A0051E357 /* Availability.m */; };
+		C9F19BA318DC934A0051E357 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2618DC934A0051E357 /* Client.m */; };
+		C9F19BA418DC934A0051E357 /* ClientCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2818DC934A0051E357 /* ClientCreditCard.m */; };
+		C9F19BA518DC934A0051E357 /* ClientIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2A18DC934A0051E357 /* ClientIndex.m */; };
+		C9F19BA618DC934A0051E357 /* ClientIndexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2C18DC934A0051E357 /* ClientIndexValue.m */; };
+		C9F19BA718DC934A0051E357 /* ClientRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B2E18DC934A0051E357 /* ClientRelationship.m */; };
+		C9F19BA818DC934A0051E357 /* ClientService.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3018DC934A0051E357 /* ClientService.m */; };
+		C9F19BA918DC934A0051E357 /* CustomClientField.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3218DC934A0051E357 /* CustomClientField.m */; };
+		C9F19BAA18DC934A0051E357 /* GetActiveSessionTimesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3418DC934A0051E357 /* GetActiveSessionTimesRequest.m */; };
+		C9F19BAB18DC934A0051E357 /* GetActiveSessionTimesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3618DC934A0051E357 /* GetActiveSessionTimesResult.m */; };
+		C9F19BAC18DC934A0051E357 /* GetAppointmentOptionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3818DC934A0051E357 /* GetAppointmentOptionsRequest.m */; };
+		C9F19BAD18DC934A0051E357 /* GetAppointmentOptionsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3A18DC934A0051E357 /* GetAppointmentOptionsResult.m */; };
+		C9F19BAE18DC934A0051E357 /* GetBookableItemsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3C18DC934A0051E357 /* GetBookableItemsRequest.m */; };
+		C9F19BAF18DC934A0051E357 /* GetBookableItemsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B3E18DC934A0051E357 /* GetBookableItemsResult.m */; };
+		C9F19BB018DC934A0051E357 /* GetScheduleItemsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4018DC934A0051E357 /* GetScheduleItemsRequest.m */; };
+		C9F19BB118DC934A0051E357 /* GetScheduleItemsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4218DC934A0051E357 /* GetScheduleItemsResult.m */; };
+		C9F19BB218DC934A0051E357 /* GetStaffAppointmentsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4418DC934A0051E357 /* GetStaffAppointmentsRequest.m */; };
+		C9F19BB318DC934A0051E357 /* GetStaffAppointmentsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4618DC934A0051E357 /* GetStaffAppointmentsResult.m */; };
+		C9F19BB418DC934A0051E357 /* GetStaffImgURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4818DC934A0051E357 /* GetStaffImgURLRequest.m */; };
+		C9F19BB518DC934A0051E357 /* GetStaffImgURLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4A18DC934A0051E357 /* GetStaffImgURLResult.m */; };
+		C9F19BB618DC934A0051E357 /* GetStaffPermissionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4C18DC934A0051E357 /* GetStaffPermissionsRequest.m */; };
+		C9F19BB718DC934A0051E357 /* GetStaffPermissionsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B4E18DC934A0051E357 /* GetStaffPermissionsResult.m */; };
+		C9F19BB818DC934A0051E357 /* GetStaffRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5018DC934A0051E357 /* GetStaffRequest.m */; };
+		C9F19BB918DC934A0051E357 /* GetStaffResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5218DC934A0051E357 /* GetStaffResult.m */; };
+		C9F19BBA18DC934A0051E357 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5418DC934A0051E357 /* Helper.m */; };
+		C9F19BBB18DC934A0051E357 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5618DC934A0051E357 /* Location.m */; };
+		C9F19BBC18DC934A0051E357 /* MBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5818DC934A0051E357 /* MBObject.m */; };
+		C9F19BBD18DC934A0051E357 /* MBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5A18DC934A0051E357 /* MBRequest.m */; };
+		C9F19BBE18DC934A0051E357 /* MBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5C18DC934A0051E357 /* MBResult.m */; };
+		C9F19BBF18DC934A0051E357 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B5E18DC934A0051E357 /* Option.m */; };
+		C9F19BC018DC934A0051E357 /* Permission.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6018DC934A0051E357 /* Permission.m */; };
+		C9F19BC118DC934A0051E357 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6218DC934A0051E357 /* Program.m */; };
+		C9F19BC218DC934A0051E357 /* Relationship.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6418DC934A0051E357 /* Relationship.m */; };
+		C9F19BC318DC934A0051E357 /* Rep.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6618DC934A0051E357 /* Rep.m */; };
+		C9F19BC418DC934A0051E357 /* RequestResultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6818DC934A0051E357 /* RequestResultHandler.m */; };
+		C9F19BC518DC934A0051E357 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6A18DC934A0051E357 /* Resource.m */; };
+		C9F19BC618DC934A0051E357 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6C18DC934A0051E357 /* ScheduleItem.m */; };
+		C9F19BC718DC934A0051E357 /* SessionType.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B6E18DC934A0051E357 /* SessionType.m */; };
+		C9F19BC818DC934A0051E357 /* Site.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7018DC934A0051E357 /* Site.m */; };
+		C9F19BC918DC934A0051E357 /* SoapError.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7218DC934A0051E357 /* SoapError.m */; };
+		C9F19BCA18DC934A0051E357 /* SourceCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7418DC934A0051E357 /* SourceCredentials.m */; };
+		C9F19BCB18DC934A0051E357 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7618DC934A0051E357 /* Staff.m */; };
+		C9F19BCC18DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7818DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.m */; };
+		C9F19BCD18DC934A0051E357 /* StaffCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7A18DC934A0051E357 /* StaffCredentials.m */; };
+		C9F19BCE18DC934A0051E357 /* Unavailability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7C18DC934A0051E357 /* Unavailability.m */; };
+		C9F19BCF18DC934A0051E357 /* UserCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19B7E18DC934A0051E357 /* UserCredentials.m */; };
+		C9F19BD718DD3A060051E357 /* AppointmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19BD618DD3A060051E357 /* AppointmentTableViewCell.m */; };
+		C9F19BDA18DD538F0051E357 /* MBAppointmentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19BD918DD538F0051E357 /* MBAppointmentsTableViewController.m */; };
+		C9F19BDD18DD56420051E357 /* MBAbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19BDC18DD56420051E357 /* MBAbstractTableViewController.m */; };
+		C9F19BE118DE3C700051E357 /* DFDateFormatterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19BE018DE3C700051E357 /* DFDateFormatterFactory.m */; };
+		C9F19BE518DF47980051E357 /* UIView+RSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F19BE418DF47980051E357 /* UIView+RSAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9F199B818D968950051E357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F1998718D968940051E357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F1998E18D968940051E357;
+			remoteInfo = MBHomework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		485A3A6C14324D998BFE62B2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE0B6BBA45B431C93D101A8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C9F1998F18D968940051E357 /* MBHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F1999218D968940051E357 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9F1999418D968940051E357 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9F1999618D968940051E357 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9F1999A18D968940051E357 /* MBHomework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBHomework-Info.plist"; sourceTree = "<group>"; };
+		C9F1999C18D968940051E357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9F1999E18D968940051E357 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9F199A018D968940051E357 /* MBHomework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBHomework-Prefix.pch"; sourceTree = "<group>"; };
+		C9F199A118D968940051E357 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9F199A218D968940051E357 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9F199A518D968940051E357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C9F199A818D968940051E357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C9F199AD18D968940051E357 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9F199B318D968950051E357 /* MBHomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBHomeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F199B418D968950051E357 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9F199BC18D968950051E357 /* MBHomeworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBHomeworkTests-Info.plist"; sourceTree = "<group>"; };
+		C9F199BE18D968950051E357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9F199C018D968950051E357 /* MBHomeworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBHomeworkTests.m; sourceTree = "<group>"; };
+		C9F199CF18DA995E0051E357 /* MBStaffTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBStaffTableViewController.h; sourceTree = "<group>"; };
+		C9F199D018DA995E0051E357 /* MBStaffTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBStaffTableViewController.m; sourceTree = "<group>"; };
+		C9F199D218DA9B8B0051E357 /* StaffTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffTableViewCell.h; sourceTree = "<group>"; };
+		C9F199D318DA9B8B0051E357 /* StaffTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffTableViewCell.m; sourceTree = "<group>"; };
+		C9F199D618DA9DA40051E357 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
+		C9F199D718DA9F430051E357 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		C9F199D818DA9F430051E357 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		C9F199DA18DAA1C70051E357 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C9F19AE718DC934A0051E357 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		C9F19AE918DC934A0051E357 /* AddOrUpdateAppointmentsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrUpdateAppointmentsRequest.h; sourceTree = "<group>"; };
+		C9F19AEA18DC934A0051E357 /* AddOrUpdateAppointmentsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrUpdateAppointmentsRequest.m; sourceTree = "<group>"; };
+		C9F19AEB18DC934A0051E357 /* AddOrUpdateAppointmentsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrUpdateAppointmentsResult.h; sourceTree = "<group>"; };
+		C9F19AEC18DC934A0051E357 /* AddOrUpdateAppointmentsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrUpdateAppointmentsResult.m; sourceTree = "<group>"; };
+		C9F19AED18DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrUpdateAvailabilitiesRequest.h; sourceTree = "<group>"; };
+		C9F19AEE18DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrUpdateAvailabilitiesRequest.m; sourceTree = "<group>"; };
+		C9F19AEF18DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrUpdateAvailabilitiesResult.h; sourceTree = "<group>"; };
+		C9F19AF018DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrUpdateAvailabilitiesResult.m; sourceTree = "<group>"; };
+		C9F19AF118DC934A0051E357 /* AddOrUpdateStaffRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrUpdateStaffRequest.h; sourceTree = "<group>"; };
+		C9F19AF218DC934A0051E357 /* AddOrUpdateStaffRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrUpdateStaffRequest.m; sourceTree = "<group>"; };
+		C9F19AF318DC934A0051E357 /* AddOrUpdateStaffResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOrUpdateStaffResult.h; sourceTree = "<group>"; };
+		C9F19AF418DC934A0051E357 /* AddOrUpdateStaffResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOrUpdateStaffResult.m; sourceTree = "<group>"; };
+		C9F19AF518DC934A0051E357 /* Appointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appointment.h; sourceTree = "<group>"; };
+		C9F19AF618DC934A0051E357 /* Appointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appointment.m; sourceTree = "<group>"; };
+		C9F19AF718DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appointment_x005F_x0020_ServiceSoap.h; sourceTree = "<group>"; };
+		C9F19AF818DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appointment_x005F_x0020_ServiceSoap.m; sourceTree = "<group>"; };
+		C9F19AF918DC934A0051E357 /* ArrayOfAppointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfAppointment.h; sourceTree = "<group>"; };
+		C9F19AFA18DC934A0051E357 /* ArrayOfAppointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfAppointment.m; sourceTree = "<group>"; };
+		C9F19AFB18DC934A0051E357 /* ArrayOfAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfAvailability.h; sourceTree = "<group>"; };
+		C9F19AFC18DC934A0051E357 /* ArrayOfAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfAvailability.m; sourceTree = "<group>"; };
+		C9F19AFD18DC934A0051E357 /* ArrayOfClientIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfClientIndex.h; sourceTree = "<group>"; };
+		C9F19AFE18DC934A0051E357 /* ArrayOfClientIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfClientIndex.m; sourceTree = "<group>"; };
+		C9F19AFF18DC934A0051E357 /* ArrayOfClientIndexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfClientIndexValue.h; sourceTree = "<group>"; };
+		C9F19B0018DC934A0051E357 /* ArrayOfClientIndexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfClientIndexValue.m; sourceTree = "<group>"; };
+		C9F19B0118DC934A0051E357 /* ArrayOfClientRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfClientRelationship.h; sourceTree = "<group>"; };
+		C9F19B0218DC934A0051E357 /* ArrayOfClientRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfClientRelationship.m; sourceTree = "<group>"; };
+		C9F19B0318DC934A0051E357 /* ArrayOfCustomClientField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfCustomClientField.h; sourceTree = "<group>"; };
+		C9F19B0418DC934A0051E357 /* ArrayOfCustomClientField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfCustomClientField.m; sourceTree = "<group>"; };
+		C9F19B0518DC934A0051E357 /* ArrayOfDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfDateTime.h; sourceTree = "<group>"; };
+		C9F19B0618DC934A0051E357 /* ArrayOfDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfDateTime.m; sourceTree = "<group>"; };
+		C9F19B0718DC934A0051E357 /* ArrayOfDayOfWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfDayOfWeek.h; sourceTree = "<group>"; };
+		C9F19B0818DC934A0051E357 /* ArrayOfDayOfWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfDayOfWeek.m; sourceTree = "<group>"; };
+		C9F19B0918DC934A0051E357 /* ArrayOfInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfInt.h; sourceTree = "<group>"; };
+		C9F19B0A18DC934A0051E357 /* ArrayOfInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfInt.m; sourceTree = "<group>"; };
+		C9F19B0B18DC934A0051E357 /* ArrayOfLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfLocation.h; sourceTree = "<group>"; };
+		C9F19B0C18DC934A0051E357 /* ArrayOfLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfLocation.m; sourceTree = "<group>"; };
+		C9F19B0D18DC934A0051E357 /* ArrayOfLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfLong.h; sourceTree = "<group>"; };
+		C9F19B0E18DC934A0051E357 /* ArrayOfLong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfLong.m; sourceTree = "<group>"; };
+		C9F19B0F18DC934A0051E357 /* ArrayOfOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfOption.h; sourceTree = "<group>"; };
+		C9F19B1018DC934A0051E357 /* ArrayOfOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfOption.m; sourceTree = "<group>"; };
+		C9F19B1118DC934A0051E357 /* ArrayOfPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfPermission.h; sourceTree = "<group>"; };
+		C9F19B1218DC934A0051E357 /* ArrayOfPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfPermission.m; sourceTree = "<group>"; };
+		C9F19B1318DC934A0051E357 /* ArrayOfProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfProgram.h; sourceTree = "<group>"; };
+		C9F19B1418DC934A0051E357 /* ArrayOfProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfProgram.m; sourceTree = "<group>"; };
+		C9F19B1518DC934A0051E357 /* ArrayOfRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfRep.h; sourceTree = "<group>"; };
+		C9F19B1618DC934A0051E357 /* ArrayOfRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfRep.m; sourceTree = "<group>"; };
+		C9F19B1718DC934A0051E357 /* ArrayOfResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfResource.h; sourceTree = "<group>"; };
+		C9F19B1818DC934A0051E357 /* ArrayOfResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfResource.m; sourceTree = "<group>"; };
+		C9F19B1918DC934A0051E357 /* ArrayOfScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfScheduleItem.h; sourceTree = "<group>"; };
+		C9F19B1A18DC934A0051E357 /* ArrayOfScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfScheduleItem.m; sourceTree = "<group>"; };
+		C9F19B1B18DC934A0051E357 /* ArrayOfStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfStaff.h; sourceTree = "<group>"; };
+		C9F19B1C18DC934A0051E357 /* ArrayOfStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfStaff.m; sourceTree = "<group>"; };
+		C9F19B1D18DC934A0051E357 /* ArrayOfStaffFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfStaffFilter.h; sourceTree = "<group>"; };
+		C9F19B1E18DC934A0051E357 /* ArrayOfStaffFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfStaffFilter.m; sourceTree = "<group>"; };
+		C9F19B1F18DC934A0051E357 /* ArrayOfString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfString.h; sourceTree = "<group>"; };
+		C9F19B2018DC934A0051E357 /* ArrayOfString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfString.m; sourceTree = "<group>"; };
+		C9F19B2118DC934A0051E357 /* ArrayOfUnavailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayOfUnavailability.h; sourceTree = "<group>"; };
+		C9F19B2218DC934A0051E357 /* ArrayOfUnavailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayOfUnavailability.m; sourceTree = "<group>"; };
+		C9F19B2318DC934A0051E357 /* Availability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Availability.h; sourceTree = "<group>"; };
+		C9F19B2418DC934A0051E357 /* Availability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Availability.m; sourceTree = "<group>"; };
+		C9F19B2518DC934A0051E357 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		C9F19B2618DC934A0051E357 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		C9F19B2718DC934A0051E357 /* ClientCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientCreditCard.h; sourceTree = "<group>"; };
+		C9F19B2818DC934A0051E357 /* ClientCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientCreditCard.m; sourceTree = "<group>"; };
+		C9F19B2918DC934A0051E357 /* ClientIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientIndex.h; sourceTree = "<group>"; };
+		C9F19B2A18DC934A0051E357 /* ClientIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientIndex.m; sourceTree = "<group>"; };
+		C9F19B2B18DC934A0051E357 /* ClientIndexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientIndexValue.h; sourceTree = "<group>"; };
+		C9F19B2C18DC934A0051E357 /* ClientIndexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientIndexValue.m; sourceTree = "<group>"; };
+		C9F19B2D18DC934A0051E357 /* ClientRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientRelationship.h; sourceTree = "<group>"; };
+		C9F19B2E18DC934A0051E357 /* ClientRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientRelationship.m; sourceTree = "<group>"; };
+		C9F19B2F18DC934A0051E357 /* ClientService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientService.h; sourceTree = "<group>"; };
+		C9F19B3018DC934A0051E357 /* ClientService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientService.m; sourceTree = "<group>"; };
+		C9F19B3118DC934A0051E357 /* CustomClientField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomClientField.h; sourceTree = "<group>"; };
+		C9F19B3218DC934A0051E357 /* CustomClientField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomClientField.m; sourceTree = "<group>"; };
+		C9F19B3318DC934A0051E357 /* GetActiveSessionTimesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetActiveSessionTimesRequest.h; sourceTree = "<group>"; };
+		C9F19B3418DC934A0051E357 /* GetActiveSessionTimesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetActiveSessionTimesRequest.m; sourceTree = "<group>"; };
+		C9F19B3518DC934A0051E357 /* GetActiveSessionTimesResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetActiveSessionTimesResult.h; sourceTree = "<group>"; };
+		C9F19B3618DC934A0051E357 /* GetActiveSessionTimesResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetActiveSessionTimesResult.m; sourceTree = "<group>"; };
+		C9F19B3718DC934A0051E357 /* GetAppointmentOptionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAppointmentOptionsRequest.h; sourceTree = "<group>"; };
+		C9F19B3818DC934A0051E357 /* GetAppointmentOptionsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAppointmentOptionsRequest.m; sourceTree = "<group>"; };
+		C9F19B3918DC934A0051E357 /* GetAppointmentOptionsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAppointmentOptionsResult.h; sourceTree = "<group>"; };
+		C9F19B3A18DC934A0051E357 /* GetAppointmentOptionsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAppointmentOptionsResult.m; sourceTree = "<group>"; };
+		C9F19B3B18DC934A0051E357 /* GetBookableItemsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetBookableItemsRequest.h; sourceTree = "<group>"; };
+		C9F19B3C18DC934A0051E357 /* GetBookableItemsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetBookableItemsRequest.m; sourceTree = "<group>"; };
+		C9F19B3D18DC934A0051E357 /* GetBookableItemsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetBookableItemsResult.h; sourceTree = "<group>"; };
+		C9F19B3E18DC934A0051E357 /* GetBookableItemsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetBookableItemsResult.m; sourceTree = "<group>"; };
+		C9F19B3F18DC934A0051E357 /* GetScheduleItemsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScheduleItemsRequest.h; sourceTree = "<group>"; };
+		C9F19B4018DC934A0051E357 /* GetScheduleItemsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetScheduleItemsRequest.m; sourceTree = "<group>"; };
+		C9F19B4118DC934A0051E357 /* GetScheduleItemsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScheduleItemsResult.h; sourceTree = "<group>"; };
+		C9F19B4218DC934A0051E357 /* GetScheduleItemsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetScheduleItemsResult.m; sourceTree = "<group>"; };
+		C9F19B4318DC934A0051E357 /* GetStaffAppointmentsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffAppointmentsRequest.h; sourceTree = "<group>"; };
+		C9F19B4418DC934A0051E357 /* GetStaffAppointmentsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffAppointmentsRequest.m; sourceTree = "<group>"; };
+		C9F19B4518DC934A0051E357 /* GetStaffAppointmentsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffAppointmentsResult.h; sourceTree = "<group>"; };
+		C9F19B4618DC934A0051E357 /* GetStaffAppointmentsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffAppointmentsResult.m; sourceTree = "<group>"; };
+		C9F19B4718DC934A0051E357 /* GetStaffImgURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffImgURLRequest.h; sourceTree = "<group>"; };
+		C9F19B4818DC934A0051E357 /* GetStaffImgURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffImgURLRequest.m; sourceTree = "<group>"; };
+		C9F19B4918DC934A0051E357 /* GetStaffImgURLResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffImgURLResult.h; sourceTree = "<group>"; };
+		C9F19B4A18DC934A0051E357 /* GetStaffImgURLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffImgURLResult.m; sourceTree = "<group>"; };
+		C9F19B4B18DC934A0051E357 /* GetStaffPermissionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffPermissionsRequest.h; sourceTree = "<group>"; };
+		C9F19B4C18DC934A0051E357 /* GetStaffPermissionsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffPermissionsRequest.m; sourceTree = "<group>"; };
+		C9F19B4D18DC934A0051E357 /* GetStaffPermissionsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffPermissionsResult.h; sourceTree = "<group>"; };
+		C9F19B4E18DC934A0051E357 /* GetStaffPermissionsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffPermissionsResult.m; sourceTree = "<group>"; };
+		C9F19B4F18DC934A0051E357 /* GetStaffRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffRequest.h; sourceTree = "<group>"; };
+		C9F19B5018DC934A0051E357 /* GetStaffRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffRequest.m; sourceTree = "<group>"; };
+		C9F19B5118DC934A0051E357 /* GetStaffResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStaffResult.h; sourceTree = "<group>"; };
+		C9F19B5218DC934A0051E357 /* GetStaffResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStaffResult.m; sourceTree = "<group>"; };
+		C9F19B5318DC934A0051E357 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		C9F19B5418DC934A0051E357 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		C9F19B5518DC934A0051E357 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		C9F19B5618DC934A0051E357 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		C9F19B5718DC934A0051E357 /* MBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBObject.h; sourceTree = "<group>"; };
+		C9F19B5818DC934A0051E357 /* MBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBObject.m; sourceTree = "<group>"; };
+		C9F19B5918DC934A0051E357 /* MBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRequest.h; sourceTree = "<group>"; };
+		C9F19B5A18DC934A0051E357 /* MBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRequest.m; sourceTree = "<group>"; };
+		C9F19B5B18DC934A0051E357 /* MBResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBResult.h; sourceTree = "<group>"; };
+		C9F19B5C18DC934A0051E357 /* MBResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBResult.m; sourceTree = "<group>"; };
+		C9F19B5D18DC934A0051E357 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		C9F19B5E18DC934A0051E357 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		C9F19B5F18DC934A0051E357 /* Permission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Permission.h; sourceTree = "<group>"; };
+		C9F19B6018DC934A0051E357 /* Permission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Permission.m; sourceTree = "<group>"; };
+		C9F19B6118DC934A0051E357 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		C9F19B6218DC934A0051E357 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		C9F19B6318DC934A0051E357 /* Relationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Relationship.h; sourceTree = "<group>"; };
+		C9F19B6418DC934A0051E357 /* Relationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Relationship.m; sourceTree = "<group>"; };
+		C9F19B6518DC934A0051E357 /* Rep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rep.h; sourceTree = "<group>"; };
+		C9F19B6618DC934A0051E357 /* Rep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rep.m; sourceTree = "<group>"; };
+		C9F19B6718DC934A0051E357 /* RequestResultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestResultHandler.h; sourceTree = "<group>"; };
+		C9F19B6818DC934A0051E357 /* RequestResultHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestResultHandler.m; sourceTree = "<group>"; };
+		C9F19B6918DC934A0051E357 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		C9F19B6A18DC934A0051E357 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
+		C9F19B6B18DC934A0051E357 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
+		C9F19B6C18DC934A0051E357 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
+		C9F19B6D18DC934A0051E357 /* SessionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionType.h; sourceTree = "<group>"; };
+		C9F19B6E18DC934A0051E357 /* SessionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionType.m; sourceTree = "<group>"; };
+		C9F19B6F18DC934A0051E357 /* Site.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Site.h; sourceTree = "<group>"; };
+		C9F19B7018DC934A0051E357 /* Site.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Site.m; sourceTree = "<group>"; };
+		C9F19B7118DC934A0051E357 /* SoapError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapError.h; sourceTree = "<group>"; };
+		C9F19B7218DC934A0051E357 /* SoapError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapError.m; sourceTree = "<group>"; };
+		C9F19B7318DC934A0051E357 /* SourceCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceCredentials.h; sourceTree = "<group>"; };
+		C9F19B7418DC934A0051E357 /* SourceCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceCredentials.m; sourceTree = "<group>"; };
+		C9F19B7518DC934A0051E357 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
+		C9F19B7618DC934A0051E357 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
+		C9F19B7718DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff_x005F_x0020_ServiceSoap.h; sourceTree = "<group>"; };
+		C9F19B7818DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff_x005F_x0020_ServiceSoap.m; sourceTree = "<group>"; };
+		C9F19B7918DC934A0051E357 /* StaffCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffCredentials.h; sourceTree = "<group>"; };
+		C9F19B7A18DC934A0051E357 /* StaffCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffCredentials.m; sourceTree = "<group>"; };
+		C9F19B7B18DC934A0051E357 /* Unavailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unavailability.h; sourceTree = "<group>"; };
+		C9F19B7C18DC934A0051E357 /* Unavailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unavailability.m; sourceTree = "<group>"; };
+		C9F19B7D18DC934A0051E357 /* UserCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCredentials.h; sourceTree = "<group>"; };
+		C9F19B7E18DC934A0051E357 /* UserCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCredentials.m; sourceTree = "<group>"; };
+		C9F19BD518DD3A060051E357 /* AppointmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentTableViewCell.h; sourceTree = "<group>"; };
+		C9F19BD618DD3A060051E357 /* AppointmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentTableViewCell.m; sourceTree = "<group>"; };
+		C9F19BD818DD538F0051E357 /* MBAppointmentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAppointmentsTableViewController.h; sourceTree = "<group>"; };
+		C9F19BD918DD538F0051E357 /* MBAppointmentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAppointmentsTableViewController.m; sourceTree = "<group>"; };
+		C9F19BDB18DD56420051E357 /* MBAbstractTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAbstractTableViewController.h; sourceTree = "<group>"; };
+		C9F19BDC18DD56420051E357 /* MBAbstractTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAbstractTableViewController.m; sourceTree = "<group>"; };
+		C9F19BDF18DE3C700051E357 /* DFDateFormatterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFDateFormatterFactory.h; sourceTree = "<group>"; };
+		C9F19BE018DE3C700051E357 /* DFDateFormatterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFDateFormatterFactory.m; sourceTree = "<group>"; };
+		C9F19BE318DF47980051E357 /* UIView+RSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RSAdditions.h"; sourceTree = "<group>"; };
+		C9F19BE418DF47980051E357 /* UIView+RSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RSAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9F1998C18D968940051E357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F1999518D968940051E357 /* CoreGraphics.framework in Frameworks */,
+				C9F1999718D968940051E357 /* UIKit.framework in Frameworks */,
+				C9F1999318D968940051E357 /* Foundation.framework in Frameworks */,
+				93F5E8167A76474A9F9686BE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F199B018D968950051E357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F199B518D968950051E357 /* XCTest.framework in Frameworks */,
+				C9F199B718D968950051E357 /* UIKit.framework in Frameworks */,
+				C9F199B618D968950051E357 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9F1998618D968940051E357 = {
+			isa = PBXGroup;
+			children = (
+				C9F1999818D968940051E357 /* MBHomework */,
+				C9F199BA18D968950051E357 /* MBHomeworkTests */,
+				C9F1999118D968940051E357 /* Frameworks */,
+				C9F1999018D968940051E357 /* Products */,
+				9BE0B6BBA45B431C93D101A8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C9F1999018D968940051E357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9F1998F18D968940051E357 /* MBHomework.app */,
+				C9F199B318D968950051E357 /* MBHomeworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9F1999118D968940051E357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9F1999218D968940051E357 /* Foundation.framework */,
+				C9F1999418D968940051E357 /* CoreGraphics.framework */,
+				C9F1999618D968940051E357 /* UIKit.framework */,
+				C9F199B418D968950051E357 /* XCTest.framework */,
+				485A3A6C14324D998BFE62B2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9F1999818D968940051E357 /* MBHomework */ = {
+			isa = PBXGroup;
+			children = (
+				C9F199CB18DA99200051E357 /* Classes */,
+				C9F199A118D968940051E357 /* AppDelegate.h */,
+				C9F199A218D968940051E357 /* AppDelegate.m */,
+				C9F199A418D968940051E357 /* Main_iPhone.storyboard */,
+				C9F199A718D968940051E357 /* Main_iPad.storyboard */,
+				C9F199AD18D968940051E357 /* Images.xcassets */,
+				C9F1999918D968940051E357 /* Supporting Files */,
+			);
+			path = MBHomework;
+			sourceTree = "<group>";
+		};
+		C9F1999918D968940051E357 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9F1999A18D968940051E357 /* MBHomework-Info.plist */,
+				C9F1999B18D968940051E357 /* InfoPlist.strings */,
+				C9F1999E18D968940051E357 /* main.m */,
+				C9F199A018D968940051E357 /* MBHomework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9F199BA18D968950051E357 /* MBHomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9F199C018D968950051E357 /* MBHomeworkTests.m */,
+				C9F199BB18D968950051E357 /* Supporting Files */,
+			);
+			path = MBHomeworkTests;
+			sourceTree = "<group>";
+		};
+		C9F199BB18D968950051E357 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9F199BC18D968950051E357 /* MBHomeworkTests-Info.plist */,
+				C9F199BD18D968950051E357 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9F199CB18DA99200051E357 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9F19AD618DC934A0051E357 /* SOAP */,
+				C9F199CC18DA99200051E357 /* Managers */,
+				C9F199CD18DA99200051E357 /* ViewControllers */,
+				C9F199CE18DA99200051E357 /* Views */,
+				C9F19BE218DF47980051E357 /* Categories */,
+				C9F199D518DA9DA40051E357 /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C9F199CC18DA99200051E357 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F199D718DA9F430051E357 /* APIClient.h */,
+				C9F199D818DA9F430051E357 /* APIClient.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C9F199CD18DA99200051E357 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F19BDB18DD56420051E357 /* MBAbstractTableViewController.h */,
+				C9F19BDC18DD56420051E357 /* MBAbstractTableViewController.m */,
+				C9F199CF18DA995E0051E357 /* MBStaffTableViewController.h */,
+				C9F199D018DA995E0051E357 /* MBStaffTableViewController.m */,
+				C9F19BD818DD538F0051E357 /* MBAppointmentsTableViewController.h */,
+				C9F19BD918DD538F0051E357 /* MBAppointmentsTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9F199CE18DA99200051E357 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9F199D218DA9B8B0051E357 /* StaffTableViewCell.h */,
+				C9F199D318DA9B8B0051E357 /* StaffTableViewCell.m */,
+				C9F19BD518DD3A060051E357 /* AppointmentTableViewCell.h */,
+				C9F19BD618DD3A060051E357 /* AppointmentTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9F199D518DA9DA40051E357 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9F199D618DA9DA40051E357 /* Debug.h */,
+				C9F199DA18DAA1C70051E357 /* Constants.h */,
+				C9F19BDF18DE3C700051E357 /* DFDateFormatterFactory.h */,
+				C9F19BE018DE3C700051E357 /* DFDateFormatterFactory.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9F19AD618DC934A0051E357 /* SOAP */ = {
+			isa = PBXGroup;
+			children = (
+				C9F19AE718DC934A0051E357 /* ReadMe.txt */,
+				C9F19AE818DC934A0051E357 /* src */,
+			);
+			path = SOAP;
+			sourceTree = "<group>";
+		};
+		C9F19AE818DC934A0051E357 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C9F19AE918DC934A0051E357 /* AddOrUpdateAppointmentsRequest.h */,
+				C9F19AEA18DC934A0051E357 /* AddOrUpdateAppointmentsRequest.m */,
+				C9F19AEB18DC934A0051E357 /* AddOrUpdateAppointmentsResult.h */,
+				C9F19AEC18DC934A0051E357 /* AddOrUpdateAppointmentsResult.m */,
+				C9F19AED18DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.h */,
+				C9F19AEE18DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.m */,
+				C9F19AEF18DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.h */,
+				C9F19AF018DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.m */,
+				C9F19AF118DC934A0051E357 /* AddOrUpdateStaffRequest.h */,
+				C9F19AF218DC934A0051E357 /* AddOrUpdateStaffRequest.m */,
+				C9F19AF318DC934A0051E357 /* AddOrUpdateStaffResult.h */,
+				C9F19AF418DC934A0051E357 /* AddOrUpdateStaffResult.m */,
+				C9F19AF518DC934A0051E357 /* Appointment.h */,
+				C9F19AF618DC934A0051E357 /* Appointment.m */,
+				C9F19AF718DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.h */,
+				C9F19AF818DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.m */,
+				C9F19AF918DC934A0051E357 /* ArrayOfAppointment.h */,
+				C9F19AFA18DC934A0051E357 /* ArrayOfAppointment.m */,
+				C9F19AFB18DC934A0051E357 /* ArrayOfAvailability.h */,
+				C9F19AFC18DC934A0051E357 /* ArrayOfAvailability.m */,
+				C9F19AFD18DC934A0051E357 /* ArrayOfClientIndex.h */,
+				C9F19AFE18DC934A0051E357 /* ArrayOfClientIndex.m */,
+				C9F19AFF18DC934A0051E357 /* ArrayOfClientIndexValue.h */,
+				C9F19B0018DC934A0051E357 /* ArrayOfClientIndexValue.m */,
+				C9F19B0118DC934A0051E357 /* ArrayOfClientRelationship.h */,
+				C9F19B0218DC934A0051E357 /* ArrayOfClientRelationship.m */,
+				C9F19B0318DC934A0051E357 /* ArrayOfCustomClientField.h */,
+				C9F19B0418DC934A0051E357 /* ArrayOfCustomClientField.m */,
+				C9F19B0518DC934A0051E357 /* ArrayOfDateTime.h */,
+				C9F19B0618DC934A0051E357 /* ArrayOfDateTime.m */,
+				C9F19B0718DC934A0051E357 /* ArrayOfDayOfWeek.h */,
+				C9F19B0818DC934A0051E357 /* ArrayOfDayOfWeek.m */,
+				C9F19B0918DC934A0051E357 /* ArrayOfInt.h */,
+				C9F19B0A18DC934A0051E357 /* ArrayOfInt.m */,
+				C9F19B0B18DC934A0051E357 /* ArrayOfLocation.h */,
+				C9F19B0C18DC934A0051E357 /* ArrayOfLocation.m */,
+				C9F19B0D18DC934A0051E357 /* ArrayOfLong.h */,
+				C9F19B0E18DC934A0051E357 /* ArrayOfLong.m */,
+				C9F19B0F18DC934A0051E357 /* ArrayOfOption.h */,
+				C9F19B1018DC934A0051E357 /* ArrayOfOption.m */,
+				C9F19B1118DC934A0051E357 /* ArrayOfPermission.h */,
+				C9F19B1218DC934A0051E357 /* ArrayOfPermission.m */,
+				C9F19B1318DC934A0051E357 /* ArrayOfProgram.h */,
+				C9F19B1418DC934A0051E357 /* ArrayOfProgram.m */,
+				C9F19B1518DC934A0051E357 /* ArrayOfRep.h */,
+				C9F19B1618DC934A0051E357 /* ArrayOfRep.m */,
+				C9F19B1718DC934A0051E357 /* ArrayOfResource.h */,
+				C9F19B1818DC934A0051E357 /* ArrayOfResource.m */,
+				C9F19B1918DC934A0051E357 /* ArrayOfScheduleItem.h */,
+				C9F19B1A18DC934A0051E357 /* ArrayOfScheduleItem.m */,
+				C9F19B1B18DC934A0051E357 /* ArrayOfStaff.h */,
+				C9F19B1C18DC934A0051E357 /* ArrayOfStaff.m */,
+				C9F19B1D18DC934A0051E357 /* ArrayOfStaffFilter.h */,
+				C9F19B1E18DC934A0051E357 /* ArrayOfStaffFilter.m */,
+				C9F19B1F18DC934A0051E357 /* ArrayOfString.h */,
+				C9F19B2018DC934A0051E357 /* ArrayOfString.m */,
+				C9F19B2118DC934A0051E357 /* ArrayOfUnavailability.h */,
+				C9F19B2218DC934A0051E357 /* ArrayOfUnavailability.m */,
+				C9F19B2318DC934A0051E357 /* Availability.h */,
+				C9F19B2418DC934A0051E357 /* Availability.m */,
+				C9F19B2518DC934A0051E357 /* Client.h */,
+				C9F19B2618DC934A0051E357 /* Client.m */,
+				C9F19B2718DC934A0051E357 /* ClientCreditCard.h */,
+				C9F19B2818DC934A0051E357 /* ClientCreditCard.m */,
+				C9F19B2918DC934A0051E357 /* ClientIndex.h */,
+				C9F19B2A18DC934A0051E357 /* ClientIndex.m */,
+				C9F19B2B18DC934A0051E357 /* ClientIndexValue.h */,
+				C9F19B2C18DC934A0051E357 /* ClientIndexValue.m */,
+				C9F19B2D18DC934A0051E357 /* ClientRelationship.h */,
+				C9F19B2E18DC934A0051E357 /* ClientRelationship.m */,
+				C9F19B2F18DC934A0051E357 /* ClientService.h */,
+				C9F19B3018DC934A0051E357 /* ClientService.m */,
+				C9F19B3118DC934A0051E357 /* CustomClientField.h */,
+				C9F19B3218DC934A0051E357 /* CustomClientField.m */,
+				C9F19B3318DC934A0051E357 /* GetActiveSessionTimesRequest.h */,
+				C9F19B3418DC934A0051E357 /* GetActiveSessionTimesRequest.m */,
+				C9F19B3518DC934A0051E357 /* GetActiveSessionTimesResult.h */,
+				C9F19B3618DC934A0051E357 /* GetActiveSessionTimesResult.m */,
+				C9F19B3718DC934A0051E357 /* GetAppointmentOptionsRequest.h */,
+				C9F19B3818DC934A0051E357 /* GetAppointmentOptionsRequest.m */,
+				C9F19B3918DC934A0051E357 /* GetAppointmentOptionsResult.h */,
+				C9F19B3A18DC934A0051E357 /* GetAppointmentOptionsResult.m */,
+				C9F19B3B18DC934A0051E357 /* GetBookableItemsRequest.h */,
+				C9F19B3C18DC934A0051E357 /* GetBookableItemsRequest.m */,
+				C9F19B3D18DC934A0051E357 /* GetBookableItemsResult.h */,
+				C9F19B3E18DC934A0051E357 /* GetBookableItemsResult.m */,
+				C9F19B3F18DC934A0051E357 /* GetScheduleItemsRequest.h */,
+				C9F19B4018DC934A0051E357 /* GetScheduleItemsRequest.m */,
+				C9F19B4118DC934A0051E357 /* GetScheduleItemsResult.h */,
+				C9F19B4218DC934A0051E357 /* GetScheduleItemsResult.m */,
+				C9F19B4318DC934A0051E357 /* GetStaffAppointmentsRequest.h */,
+				C9F19B4418DC934A0051E357 /* GetStaffAppointmentsRequest.m */,
+				C9F19B4518DC934A0051E357 /* GetStaffAppointmentsResult.h */,
+				C9F19B4618DC934A0051E357 /* GetStaffAppointmentsResult.m */,
+				C9F19B4718DC934A0051E357 /* GetStaffImgURLRequest.h */,
+				C9F19B4818DC934A0051E357 /* GetStaffImgURLRequest.m */,
+				C9F19B4918DC934A0051E357 /* GetStaffImgURLResult.h */,
+				C9F19B4A18DC934A0051E357 /* GetStaffImgURLResult.m */,
+				C9F19B4B18DC934A0051E357 /* GetStaffPermissionsRequest.h */,
+				C9F19B4C18DC934A0051E357 /* GetStaffPermissionsRequest.m */,
+				C9F19B4D18DC934A0051E357 /* GetStaffPermissionsResult.h */,
+				C9F19B4E18DC934A0051E357 /* GetStaffPermissionsResult.m */,
+				C9F19B4F18DC934A0051E357 /* GetStaffRequest.h */,
+				C9F19B5018DC934A0051E357 /* GetStaffRequest.m */,
+				C9F19B5118DC934A0051E357 /* GetStaffResult.h */,
+				C9F19B5218DC934A0051E357 /* GetStaffResult.m */,
+				C9F19B5318DC934A0051E357 /* Helper.h */,
+				C9F19B5418DC934A0051E357 /* Helper.m */,
+				C9F19B5518DC934A0051E357 /* Location.h */,
+				C9F19B5618DC934A0051E357 /* Location.m */,
+				C9F19B5718DC934A0051E357 /* MBObject.h */,
+				C9F19B5818DC934A0051E357 /* MBObject.m */,
+				C9F19B5918DC934A0051E357 /* MBRequest.h */,
+				C9F19B5A18DC934A0051E357 /* MBRequest.m */,
+				C9F19B5B18DC934A0051E357 /* MBResult.h */,
+				C9F19B5C18DC934A0051E357 /* MBResult.m */,
+				C9F19B5D18DC934A0051E357 /* Option.h */,
+				C9F19B5E18DC934A0051E357 /* Option.m */,
+				C9F19B5F18DC934A0051E357 /* Permission.h */,
+				C9F19B6018DC934A0051E357 /* Permission.m */,
+				C9F19B6118DC934A0051E357 /* Program.h */,
+				C9F19B6218DC934A0051E357 /* Program.m */,
+				C9F19B6318DC934A0051E357 /* Relationship.h */,
+				C9F19B6418DC934A0051E357 /* Relationship.m */,
+				C9F19B6518DC934A0051E357 /* Rep.h */,
+				C9F19B6618DC934A0051E357 /* Rep.m */,
+				C9F19B6718DC934A0051E357 /* RequestResultHandler.h */,
+				C9F19B6818DC934A0051E357 /* RequestResultHandler.m */,
+				C9F19B6918DC934A0051E357 /* Resource.h */,
+				C9F19B6A18DC934A0051E357 /* Resource.m */,
+				C9F19B6B18DC934A0051E357 /* ScheduleItem.h */,
+				C9F19B6C18DC934A0051E357 /* ScheduleItem.m */,
+				C9F19B6D18DC934A0051E357 /* SessionType.h */,
+				C9F19B6E18DC934A0051E357 /* SessionType.m */,
+				C9F19B6F18DC934A0051E357 /* Site.h */,
+				C9F19B7018DC934A0051E357 /* Site.m */,
+				C9F19B7118DC934A0051E357 /* SoapError.h */,
+				C9F19B7218DC934A0051E357 /* SoapError.m */,
+				C9F19B7318DC934A0051E357 /* SourceCredentials.h */,
+				C9F19B7418DC934A0051E357 /* SourceCredentials.m */,
+				C9F19B7518DC934A0051E357 /* Staff.h */,
+				C9F19B7618DC934A0051E357 /* Staff.m */,
+				C9F19B7718DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.h */,
+				C9F19B7818DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.m */,
+				C9F19B7918DC934A0051E357 /* StaffCredentials.h */,
+				C9F19B7A18DC934A0051E357 /* StaffCredentials.m */,
+				C9F19B7B18DC934A0051E357 /* Unavailability.h */,
+				C9F19B7C18DC934A0051E357 /* Unavailability.m */,
+				C9F19B7D18DC934A0051E357 /* UserCredentials.h */,
+				C9F19B7E18DC934A0051E357 /* UserCredentials.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C9F19BE218DF47980051E357 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C9F19BE318DF47980051E357 /* UIView+RSAdditions.h */,
+				C9F19BE418DF47980051E357 /* UIView+RSAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9F1998E18D968940051E357 /* MBHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9F199C418D968950051E357 /* Build configuration list for PBXNativeTarget "MBHomework" */;
+			buildPhases = (
+				81BA6720FB7D45019C6428F1 /* Check Pods Manifest.lock */,
+				C9F1998B18D968940051E357 /* Sources */,
+				C9F1998C18D968940051E357 /* Frameworks */,
+				C9F1998D18D968940051E357 /* Resources */,
+				EAEE130900D643E98C3C7FE7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBHomework;
+			productName = MBHomework;
+			productReference = C9F1998F18D968940051E357 /* MBHomework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9F199B218D968950051E357 /* MBHomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9F199C718D968950051E357 /* Build configuration list for PBXNativeTarget "MBHomeworkTests" */;
+			buildPhases = (
+				C9F199AF18D968950051E357 /* Sources */,
+				C9F199B018D968950051E357 /* Frameworks */,
+				C9F199B118D968950051E357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9F199B918D968950051E357 /* PBXTargetDependency */,
+			);
+			name = MBHomeworkTests;
+			productName = MBHomeworkTests;
+			productReference = C9F199B318D968950051E357 /* MBHomeworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9F1998718D968940051E357 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matthew Whitehead";
+				TargetAttributes = {
+					C9F199B218D968950051E357 = {
+						TestTargetID = C9F1998E18D968940051E357;
+					};
+				};
+			};
+			buildConfigurationList = C9F1998A18D968940051E357 /* Build configuration list for PBXProject "MBHomework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9F1998618D968940051E357;
+			productRefGroup = C9F1999018D968940051E357 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9F1998E18D968940051E357 /* MBHomework */,
+				C9F199B218D968950051E357 /* MBHomeworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9F1998D18D968940051E357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F199A918D968940051E357 /* Main_iPad.storyboard in Resources */,
+				C9F199AE18D968940051E357 /* Images.xcassets in Resources */,
+				C9F199A618D968940051E357 /* Main_iPhone.storyboard in Resources */,
+				C9F19B8418DC934A0051E357 /* ReadMe.txt in Resources */,
+				C9F1999D18D968940051E357 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F199B118D968950051E357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F199BF18D968950051E357 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81BA6720FB7D45019C6428F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEE130900D643E98C3C7FE7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9F1998B18D968940051E357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F19B8D18DC934A0051E357 /* ArrayOfAppointment.m in Sources */,
+				C9F19BBB18DC934A0051E357 /* Location.m in Sources */,
+				C9F19B9618DC934A0051E357 /* ArrayOfLocation.m in Sources */,
+				C9F19B8618DC934A0051E357 /* AddOrUpdateAppointmentsResult.m in Sources */,
+				C9F19BBA18DC934A0051E357 /* Helper.m in Sources */,
+				C9F19BBC18DC934A0051E357 /* MBObject.m in Sources */,
+				C9F19B9118DC934A0051E357 /* ArrayOfClientRelationship.m in Sources */,
+				C9F19BC518DC934A0051E357 /* Resource.m in Sources */,
+				C9F19B9018DC934A0051E357 /* ArrayOfClientIndexValue.m in Sources */,
+				C9F19BA918DC934A0051E357 /* CustomClientField.m in Sources */,
+				C9F19B8818DC934A0051E357 /* AddOrUpdateAvailabilitiesResult.m in Sources */,
+				C9F19BE118DE3C700051E357 /* DFDateFormatterFactory.m in Sources */,
+				C9F199D918DA9F430051E357 /* APIClient.m in Sources */,
+				C9F19BCB18DC934A0051E357 /* Staff.m in Sources */,
+				C9F19B9418DC934A0051E357 /* ArrayOfDayOfWeek.m in Sources */,
+				C9F19BDD18DD56420051E357 /* MBAbstractTableViewController.m in Sources */,
+				C9F19BC018DC934A0051E357 /* Permission.m in Sources */,
+				C9F19B9B18DC934A0051E357 /* ArrayOfRep.m in Sources */,
+				C9F19BB718DC934A0051E357 /* GetStaffPermissionsResult.m in Sources */,
+				C9F19B8A18DC934A0051E357 /* AddOrUpdateStaffResult.m in Sources */,
+				C9F19BA018DC934A0051E357 /* ArrayOfString.m in Sources */,
+				C9F19B8918DC934A0051E357 /* AddOrUpdateStaffRequest.m in Sources */,
+				C9F199A318D968940051E357 /* AppDelegate.m in Sources */,
+				C9F19B9D18DC934A0051E357 /* ArrayOfScheduleItem.m in Sources */,
+				C9F19B9918DC934A0051E357 /* ArrayOfPermission.m in Sources */,
+				C9F19BA418DC934A0051E357 /* ClientCreditCard.m in Sources */,
+				C9F19BC818DC934A0051E357 /* Site.m in Sources */,
+				C9F19BCD18DC934A0051E357 /* StaffCredentials.m in Sources */,
+				C9F19BCC18DC934A0051E357 /* Staff_x005F_x0020_ServiceSoap.m in Sources */,
+				C9F19B8C18DC934A0051E357 /* Appointment_x005F_x0020_ServiceSoap.m in Sources */,
+				C9F19B9818DC934A0051E357 /* ArrayOfOption.m in Sources */,
+				C9F19BB818DC934A0051E357 /* GetStaffRequest.m in Sources */,
+				C9F19BA118DC934A0051E357 /* ArrayOfUnavailability.m in Sources */,
+				C9F19BB418DC934A0051E357 /* GetStaffImgURLRequest.m in Sources */,
+				C9F19BAC18DC934A0051E357 /* GetAppointmentOptionsRequest.m in Sources */,
+				C9F19B9F18DC934A0051E357 /* ArrayOfStaffFilter.m in Sources */,
+				C9F19BCF18DC934A0051E357 /* UserCredentials.m in Sources */,
+				C9F19BCE18DC934A0051E357 /* Unavailability.m in Sources */,
+				C9F19B8E18DC934A0051E357 /* ArrayOfAvailability.m in Sources */,
+				C9F199D118DA995E0051E357 /* MBStaffTableViewController.m in Sources */,
+				C9F19BAD18DC934A0051E357 /* GetAppointmentOptionsResult.m in Sources */,
+				C9F19BC218DC934A0051E357 /* Relationship.m in Sources */,
+				C9F19BB118DC934A0051E357 /* GetScheduleItemsResult.m in Sources */,
+				C9F19B8B18DC934A0051E357 /* Appointment.m in Sources */,
+				C9F19BAB18DC934A0051E357 /* GetActiveSessionTimesResult.m in Sources */,
+				C9F19BB518DC934A0051E357 /* GetStaffImgURLResult.m in Sources */,
+				C9F199D418DA9B8B0051E357 /* StaffTableViewCell.m in Sources */,
+				C9F19BA818DC934A0051E357 /* ClientService.m in Sources */,
+				C9F19BC318DC934A0051E357 /* Rep.m in Sources */,
+				C9F19BC718DC934A0051E357 /* SessionType.m in Sources */,
+				C9F19B9718DC934A0051E357 /* ArrayOfLong.m in Sources */,
+				C9F19BA218DC934A0051E357 /* Availability.m in Sources */,
+				C9F19B9A18DC934A0051E357 /* ArrayOfProgram.m in Sources */,
+				C9F19BAF18DC934A0051E357 /* GetBookableItemsResult.m in Sources */,
+				C9F19BBD18DC934A0051E357 /* MBRequest.m in Sources */,
+				C9F19B9318DC934A0051E357 /* ArrayOfDateTime.m in Sources */,
+				C9F1999F18D968940051E357 /* main.m in Sources */,
+				C9F19B8518DC934A0051E357 /* AddOrUpdateAppointmentsRequest.m in Sources */,
+				C9F19BE518DF47980051E357 /* UIView+RSAdditions.m in Sources */,
+				C9F19BC618DC934A0051E357 /* ScheduleItem.m in Sources */,
+				C9F19BB018DC934A0051E357 /* GetScheduleItemsRequest.m in Sources */,
+				C9F19BD718DD3A060051E357 /* AppointmentTableViewCell.m in Sources */,
+				C9F19BAA18DC934A0051E357 /* GetActiveSessionTimesRequest.m in Sources */,
+				C9F19B8F18DC934A0051E357 /* ArrayOfClientIndex.m in Sources */,
+				C9F19B9C18DC934A0051E357 /* ArrayOfResource.m in Sources */,
+				C9F19BCA18DC934A0051E357 /* SourceCredentials.m in Sources */,
+				C9F19BB318DC934A0051E357 /* GetStaffAppointmentsResult.m in Sources */,
+				C9F19BBE18DC934A0051E357 /* MBResult.m in Sources */,
+				C9F19BA518DC934A0051E357 /* ClientIndex.m in Sources */,
+				C9F19BB218DC934A0051E357 /* GetStaffAppointmentsRequest.m in Sources */,
+				C9F19BC418DC934A0051E357 /* RequestResultHandler.m in Sources */,
+				C9F19BC918DC934A0051E357 /* SoapError.m in Sources */,
+				C9F19B8718DC934A0051E357 /* AddOrUpdateAvailabilitiesRequest.m in Sources */,
+				C9F19BB618DC934A0051E357 /* GetStaffPermissionsRequest.m in Sources */,
+				C9F19B9E18DC934A0051E357 /* ArrayOfStaff.m in Sources */,
+				C9F19B9518DC934A0051E357 /* ArrayOfInt.m in Sources */,
+				C9F19BA618DC934A0051E357 /* ClientIndexValue.m in Sources */,
+				C9F19BBF18DC934A0051E357 /* Option.m in Sources */,
+				C9F19BC118DC934A0051E357 /* Program.m in Sources */,
+				C9F19BA318DC934A0051E357 /* Client.m in Sources */,
+				C9F19BA718DC934A0051E357 /* ClientRelationship.m in Sources */,
+				C9F19BAE18DC934A0051E357 /* GetBookableItemsRequest.m in Sources */,
+				C9F19B9218DC934A0051E357 /* ArrayOfCustomClientField.m in Sources */,
+				C9F19BDA18DD538F0051E357 /* MBAppointmentsTableViewController.m in Sources */,
+				C9F19BB918DC934A0051E357 /* GetStaffResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F199AF18D968950051E357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F199C118D968950051E357 /* MBHomeworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9F199B918D968950051E357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9F1998E18D968940051E357 /* MBHomework */;
+			targetProxy = C9F199B818D968950051E357 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9F1999B18D968940051E357 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F1999C18D968940051E357 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9F199A418D968940051E357 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F199A518D968940051E357 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C9F199A718D968940051E357 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F199A818D968940051E357 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C9F199BD18D968950051E357 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F199BE18D968950051E357 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9F199C218D968950051E357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9F199C318D968950051E357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9F199C518D968950051E357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE0B6BBA45B431C93D101A8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBHomework/MBHomework-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "MBHomework/MBHomework-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "61FA0A7E-1D69-4BD8-9D5E-178166137D07";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9F199C618D968950051E357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE0B6BBA45B431C93D101A8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBHomework/MBHomework-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "MBHomework/MBHomework-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "61FA0A7E-1D69-4BD8-9D5E-178166137D07";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9F199C818D968950051E357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBHomework.app/MBHomework";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBHomework/MBHomework-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MBHomeworkTests/MBHomeworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C9F199C918D968950051E357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBHomework.app/MBHomework";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBHomework/MBHomework-Prefix.pch";
+				INFOPLIST_FILE = "MBHomeworkTests/MBHomeworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9F1998A18D968940051E357 /* Build configuration list for PBXProject "MBHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F199C218D968950051E357 /* Debug */,
+				C9F199C318D968950051E357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9F199C418D968950051E357 /* Build configuration list for PBXNativeTarget "MBHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F199C518D968950051E357 /* Debug */,
+				C9F199C618D968950051E357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9F199C718D968950051E357 /* Build configuration list for PBXNativeTarget "MBHomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F199C818D968950051E357 /* Debug */,
+				C9F199C918D968950051E357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9F1998718D968940051E357 /* Project object */;
+}
